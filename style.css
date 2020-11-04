@@ -1,0 +1,374 @@
+/*===================
+1. BASE CSS
+===================== */
+
+body {
+    font-size: 15px;
+    line-height: 23px;
+    font-family: 'Ubuntu', sans-serif;
+    color: #525252;
+    -webkit-font-smoothing: antialiased;
+    background: #f5f5f8;
+}
+
+a:focus {
+    outline: 0 solid
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.fix {
+    overflow: hidden
+}
+
+
+
+a:focus,
+a:hover {
+    color: #303030;
+}
+
+a,
+a:hover,
+a:focus {
+    text-decoration: none;
+    outline: none;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+#scrollUp {
+	width: 50px;
+	height: 50px;
+	background: #3a5065;
+	color: #fff;
+	right: 30px;
+	bottom: 30px;
+	text-align: center;
+	display: table;
+	border-radius: 45px;
+	width: 50px;
+	height: 62px;
+}
+#scrollUp i {
+        font-size: 22px;
+        transform: rotate(-45deg);
+    display: table-cell;
+    vertical-align: middle;
+    }
+/*===========================================
+4. HEADER AREA
+=============================================*/
+.header-parallax{
+ background: linear-gradient(90deg, rgb(42, 100, 103) 0%, rgb(45, 188, 148) 100%);
+    color: #fff;
+    padding: 85px 0;
+}
+
+.feature-area {
+    background-attachment: fixed;
+    background-size: cover;
+    color: #fff;
+    padding: 115px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.feature-area::after {
+    background: #222d36 none repeat scroll 0 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+
+.intro-text h1 {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.intro-text p {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.intro-text span {
+    display: block;
+    font-size: 28px;
+}
+
+.mb100 {
+    margin-bottom: 50px;
+}
+
+.home-version {
+    padding: 100px 0 30px;
+}
+
+.section-title {
+    margin-bottom: 60px;
+    text-transform: capitalize;
+    color: #535353;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.custom-btn {
+    background: #2dbcad;
+    padding: 15px 30px;
+    display: inline-block;
+    border-radius: 30px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+    transition: 1s;
+    text-transform: capitalize;
+}
+
+.custom-btn:hover {
+    background: #c54f0f;
+    color: #fff;
+}
+
+.single-preview {
+    box-shadow: 0px 0px 10px 0 rgba(71, 64, 64, 0.2);
+    margin-bottom: 60px;
+    transition: all 0.4s ease 0s;
+    text-align: center;
+    border: 9px solid #f3f3f3;
+    max-height: 460px;
+    overflow: hidden;
+    position: relative;
+}
+
+.single-preview figure {
+    position: relative;
+    transition: all 0.3s ease 0s;
+    margin: 0;
+}
+
+.single-preview img {
+    width: 100%;
+}
+
+.single-preview a {
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+.single-preview a {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	content: "";
+	background: #2dbcad;
+	opacity: 0;
+	border-radius: 5px;
+	transition: .5s;
+}
+.single-preview span {
+	position: absolute;
+	right: 0;
+	top: 45%;
+	background: #2dbcad;
+	width: 45px;
+	height: 70px;
+	color: #fff;
+	border-radius: 30px;
+	transform: translateY(-50%);
+	font-weight: 700;
+	font-size: 24px;
+	text-align: center;
+	line-height: 70px;
+    z-index: 6;
+}
+
+.single-preview h4 {
+    color: #fff;
+    position: absolute;
+    bottom: -40px;
+    font-size: 23px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-transform: capitalize;
+    font-weight: 500;
+    z-index: 4;
+    transition: .4s;
+}
+
+.other-area .single-preview {
+    margin-bottom: 100px;
+}
+.single-preview:hover a {
+    opacity: .8;
+}
+.single-preview:hover h4 {
+    bottom: 10px;
+}
+/* ==========================================
+FEATURE AREA
+============================================ */
+
+.feature-area {
+    padding: 100px 0 0px;
+    z-index: 1;
+    position: relative;
+    background-size: cover;
+}
+
+.feature-area::after {
+    background: #fff;
+    opacity: .75;
+}
+
+.single-promo {
+    margin-bottom: 100px;
+}
+
+.promo-txt p {
+    color: #525252;
+}
+
+.promo-icon {
+    width: 36px;
+    height: 36px;
+    display: table;
+    border-radius: 50%;
+    text-align: center;
+    float: left;
+}
+
+.promo-icon i {
+    display: table-cell;
+    vertical-align: middle;
+    color: #fff;
+    font-size: 18px;
+}
+
+.feature-area .row div:nth-child(1) .promo-icon {
+    background: #ff6b6b;
+}
+
+.feature-area .row div:nth-child(2) .promo-icon {
+    background: #feca57;
+}
+
+.feature-area .row div:nth-child(3) .promo-icon {
+    background: #ff9ff3;
+}
+
+.feature-area .row div:nth-child(4) .promo-icon {
+    background: #48dbfb;
+}
+
+.feature-area .row div:nth-child(5) .promo-icon {
+    background: #1cd1a1;
+}
+
+.feature-area .row div:nth-child(6) .promo-icon {
+    background: #00d2d3;
+}
+
+.feature-area .row div:nth-child(7) .promo-icon {
+    background: #8395a7;
+}
+
+.feature-area .row div:nth-child(8) .promo-icon {
+    background: #5f27cd;
+}
+
+.feature-area .row div:nth-child(9) .promo-icon {
+    background: #54a0ff;
+}
+
+.promo-txt {
+    margin-left: 60px;
+}
+
+.promo-txt h3 {
+    color: #58585e;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+/* PERCHASE AREA */
+
+.perchase-area {
+    background-image: linear-gradient(to right, #34495e 0%, #2c3e50 100%);
+    padding: 100px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.perchase-area::after {
+    opacity: .9;
+}
+
+.perchase-text {
+    max-width: 740px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.perchase-text h3 {
+    color: #fff;
+    font-size: 30px;
+}
+
+.perchase-text p {
+    margin: 30px 0 45px;
+    font-size: 20px;
+    line-height: 30px;
+    color: #8795a2;
+}
+
+/* Footer Area */
+
+.footer-area {
+background-image: linear-gradient(to left, #242d35 0%, #202c38 100%);
+    padding: 20px 0;
+}
+
+.copy-right span {
+    color: #8795a2;
+    display: block;
+}
+
+.footer-area a {
+    margin: 0 10px;
+    color: #8795a2;
+    font-size: 14px;
+}
+
+.footer-social,
+.footer-area p {
+    margin-top: 10px;
+}
+
+.footer-social a,
+.footer-area p {
+    color: #8795a2;
+    font-size: 14px;
+}
+
+.copy-right p {
+    font-weight: 500;
+    color: #8795a2;
+    margin: 0;
+}
